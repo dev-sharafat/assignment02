@@ -1,122 +1,445 @@
 
-
-/* font-family */
-.font-quicksand {
+.quicksand-font{
     font-family: "Quicksand", serif;
     font-optical-sizing: auto;
     font-weight: <weight>;
     font-style: normal;
-}
-  .font-raleway{
+  }
+.raleway-font {
     font-family: "Raleway", serif;
     font-optical-sizing: auto;
     font-weight: <weight>;
     font-style: normal;
 }
-
-/* shear styles */
-.display-flex{
-    display: flex;
-}
-
-
-/* main style */
-
-/* header-styles */
-.header-section{
-    max-width: 1480px;
-    margin: 20px auto;
-}
-.navbar{
-    width: 1240px;
+body{
+    max-width: 1440px;
     margin: auto;
+}
+
+.header-section{
+    width: 1280px;
+    margin: 20px auto 0 auto;
+}
+.nav-bar, .navlinks, .nav-title{
+    display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.section-title{
-    justify-content: center;
-    gap: 11px;
-    align-items: center;
+.navlinks{
+    gap: 100px;
 }
-.header-title{
-    font-size: 2rem;
-    font-weight: 700
-}
-.nav-links{
-    gap: 50px;
-    justify-content: center;
-    align-items: center;
-}
-.nav-links a{
+.navlinks a{
     text-decoration: none;
 }
-ul li{
+.navlinks li{
     list-style: none;
 }
-.navlink1{
+.sp-title-1{
+    margin-left: 10px;
+    font-size: 2rem;
+}
+.navlink-1{
+    font-weight: 500;
+    font-size:1.25rem ;
     color: rgb(254, 163, 1);
+}
+.navlink-2{
     font-weight: 700;
-    font-size: 1.25rem;
-}
-.navlink2{
+    font-size:1.25rem ;
     color: rgb(1, 172, 253);
-    font-weight: 500;
-    font-size: 1.25rem;
 }
-.navlink3{
-    color: 
-    rgb(5, 212, 223);
+.navlink-3{
     font-weight: 500;
-    font-size: 1.25rem;
+    font-size:1.25rem ;
+    color: rgb(5, 212, 223);
 }
-.navlink4{
+.navlink-4{
+    font-weight: 500;
+    font-size:1.25rem ;
     color: rgb(93, 88, 239);
-    font-weight: 500;
-    font-size: 1.25rem;
 }
-.header-btn{
+.nav-btn{
     width: 197px;
     height: 50px;
     border-radius: 12px;
     background: rgb(254, 163, 1);
     border: none;
+    color: white;
+    font-weight: 600;
+    font-size: 1.25rem;
 }
-.menu-icon{
-    visibility: hidden;
+
+/* banner-section */
+
+.banner-section{
+    display: flex;
+    gap: 50px;
+    justify-content: space-between;
+}
+.banner-content{
+    margin-top: 100px;
+    width: 640px;
+    height: 131px;
+}
+.banner-title{
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+.banner-description{
+    font-size: 1.25rem;
 }
 
-/* 
-/* resposive for mobile */
+.main-content{
+    background-image: url(assets/bg.png);
+    background-repeat: no-repeat;
+}
+/* curriculam-section */
 
+.curriculam-section{
+    width: 1280px;
+    margin: auto;
+    border: 3px dashed gray;
+    border-left: none;
+    border-right: none;
+}
+.curriculam-title{
+    margin-top: 60px;
+    font-size:3rem;
+    font-weight: 700;
+    text-align: center;
+}
+.curriculam-cards{
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+}
+.card-title{
+    font-size: 1.53rem;
+    font-weight: 700;
+}
+.card-description{
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgb(128, 128, 128);
+}
+.curriculam-card-1{
+    width: 390px;
+    height: 477px;
+    padding: 40px;
+    display: flex;
+    gap: 33px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+    border: 0.94px solid rgb(222, 245, 255);
+    border-radius: 18.86px;
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(180.00deg, rgb(222, 245, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+}
+.curriculam-card-2{
+    width: 390px;
+    height: 477px;
+    padding: 40px;
+    display: flex;
+    gap: 33px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+    border: 0.94px solid rgb(255, 244, 220);
+    border-radius: 18.86px;
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(180.00deg, rgb(255, 244, 220),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+}
+.curriculam-card-3{
+    width: 390px;
+    height: 477px;
+    padding: 40px;
+    display: flex;
+    gap: 33px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+    border: 0.94px solid rgb(242, 232, 255);
+    border-radius: 18.86px;
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+}
+.style-of-rd-1{
+    text-decoration: none;
+    color: rgb(100, 200, 255);
+    font-weight: 700;
+}
+.style-of-rd-2{
+    text-decoration: none;
+    color: rgb(240, 170, 0);
+    font-weight: 700;
+}
+.style-of-rd-3{
+    text-decoration: none;
+    color: rgb(135, 0, 255);
+    font-weight: 700;
+}
+.icon-div{
+    margin-top: 80px;
+    margin-bottom: 60px;
+}
+.icon-div{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.icon{
+    width: 60px;
+    height:60px;
+    background-color: rgb(254, 163, 1);
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
 
-@media screen and (max-width:576px) {
-    .nav-links, 
-    .header-btn, 
-    .header-title
-    {
-        display: none;
-    }
-    .navbar{
-        gap: 0;
-        width: 100%;
-        margin: 0;
-        
-    }
-    .header-section{
-        margin: 20px;
-    }
-    .navbar{
-        justify-content: space-between;
-        align-items: center;
-    }
-    .header-title{
-        font-size: 1.5rem;
+}
 
-    }
-    .menu-icon{
-        visibility: visible;
-        font-size: 28px;
-    }
-    
-    
-} 
+/* stories-section */
+
+.stories-section{
+    max-width: 1440px;
+    height: 1000px;
+    margin: auto;
+    background: url(assets/bg.png),linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
+}
+.stories-content{
+    margin-top: 60px;
+    width: 1280px;
+    margin: auto;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+}
+.story-cards{
+    width: 1280px;
+    margin: auto;
+
+}
+.story-card-1{
+    width: 540px;
+    height: 630px;
+    border-radius: 16px;
+    background: rgb(255, 255, 255);
+    position: relative;
+    margin-right: 70px;
+    grid-area: card-1;
+}
+.story-crd-btn-1{
+    position: absolute;
+    left: 38px;
+    top: 313px;
+    width: 174px;
+    height: 47px;
+    border-radius: 47.93px;
+    background: rgb(60, 216, 232);
+    border: none;
+    color: white;
+    font-weight: 500;
+}
+.crd-btn-1-img{
+    border-radius: 16px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;    
+}
+.story-crd-title-1{
+    margin: 61px 99px 51px 38px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+}
+.story-crd-description{
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 0 68px 34px 38px;
+}
+.story-card-2{
+    position: relative;
+    border-radius: 16px;
+    background: rgb(255, 255, 255);
+    width: 290px;
+    height: 301px;
+    margin-right: 20px;
+    grid-area: card-2;
+}
+.story-crd-btn-2{
+    position: absolute;
+    left: 38px;
+    top: 158px;
+    width: 174px;
+    height: 38px;
+    border: none;
+    border-radius: 47.93px;
+    background: rgb(149, 178, 38);
+    color: white;
+    font-size: 1rem;
+
+}
+.story-crd-title-2{
+    margin: 28px 54px 33px 38px;
+    font-weight: 700;
+}
+.crd-btn-2-img{
+    border-radius: 16px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.story-card-3{
+    position: relative;
+    border-radius: 16px;
+    background: rgb(255, 255, 255);
+    width: 290px;
+    height: 301px;
+    grid-area: card-3;
+}
+.story-crd-btn-3{
+    position: absolute;
+    left: 38px;
+    top: 158px;
+    width: 174px;
+    height: 38px;
+    border-radius: 47.93px;
+    background: rgb(93, 88, 240);
+    color: white;
+    font-size: 1rem;
+    border: none;
+}
+.story-crd-title-3{
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 28px 60px 33px 38px;
+}
+.story-card-4{
+    position: relative;
+    border-radius: 16px;
+    background: rgb(255, 255, 255);
+    width: 290px;
+    height: 301px;
+    grid-area: card-4;
+}
+.story-crd-btn-4{
+    position: absolute;
+    left: 38px;
+    top: 158px;
+    width: 179px;
+    height: 38px;
+    border: none;
+    border-radius: 47.93px;
+    background: rgb(149, 178, 38);
+    color: white;
+    font-size: 1rem;
+}
+.story-card-5{
+    position: relative;
+    border-radius: 16px;
+    background: rgb(255, 255, 255);
+    width: 290px;
+    height: 301px;
+    grid-area: card-5;
+}
+.story-crd-btn-5{
+    position: absolute;
+    left: 38px;
+    top: 158px;
+    width: 127px;
+    height: 38px;
+    border: none;
+    border-radius: 47.93px;
+    background: rgb(149, 178, 38);
+    color: white;
+    font-size: 1rem;
+}
+.story-cards{
+    display: grid;
+    gap: 20px;
+    grid-template-areas: 
+    "card-1  card-2  card-3"
+    "card-1  card-4  card-5"
+    ;
+}
+.story-btn{
+    margin: 80px auto 60px auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.stry-btn{
+    width: 197px;
+    height: 50px;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 12px;
+    background: rgb(17, 17, 17);
+    color: white;
+}
+
+/* footer-section */
+.footer-section{
+    background-color: rgb(1, 172, 253);
+    color: white;
+}
+.footer-logo-tl, .list-items, .footer-touch, .li-links{
+    display: flex;
+    gap: 10px;
+}
+.list-items, .footer-touch, .li-links{
+    flex-direction: column;
+}
+.footer-des{
+    margin-top: 35px;
+    margin-left: 10px;
+    width: 399px;
+    height: 100px;
+    font-size: 1.25rem;
+}
+.footer-container{
+    padding: 123px 228px 174px 140px;
+    display: flex;
+    gap: 100px;
+    justify-content: space-around;
+}
+.list-items a{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 1.25rem;
+}
+ul li{
+    list-style: none;
+}
+.li-links{
+    justify-content: start;
+    align-items: start;
+    text-align: start;
+    gap: 30px;
+    margin-left: -40px;
+}
+.sp-title-2{
+    font-size: 2rem;
+    font-weight: 700;
+}
+.logo-style{
+    width: 62px;
+}
+.school-ft{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.ft-touch{
+    font-weight: 700;
+    font-size: 1.625rem;
+}
