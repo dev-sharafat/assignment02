@@ -82,8 +82,7 @@ ul li{
     border: none;
 }
 .menu-icon{
-    display: none;
-    font-size: 30px;
+    visibility: hidden;
 }
 
 /* 
@@ -115,7 +114,8 @@ ul li{
 
     }
     .menu-icon{
-        display: block;
+        visibility: visible;
+        font-size: 28px;
     }
     
     
