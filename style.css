@@ -103,7 +103,6 @@ body{
 .curriculam-section{
     width: 1280px;
     margin: auto;
-    border: 3px dashed gray;
     border-left: none;
     border-right: none;
 }
