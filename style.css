@@ -453,6 +453,9 @@ ul li{
 .display-hide, .nav-icon, .line-nav{
     display: none;
 }
+.hide{
+    display: none;
+}
 
 /* Responsive for mobile */
 
